@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BreedViewController" customModule="Dog_Ceo" customModuleProvider="target">
+            <connections>
+                <outlet property="galleryCollectionView" destination="RzN-ho-uk4" id="edx-fu-6iH"/>
+                <outlet property="galleryCollectionViewFlowLayout" destination="0E6-rM-b27" id="aIx-Nq-mzM"/>
+                <outlet property="pageIndicatorLabel" destination="rqz-Bz-PRI" id="WgE-eD-01z"/>
+                <outlet property="subBreedCollectionView" destination="xl3-Uo-b5G" id="mmu-Nw-QnE"/>
+                <outlet property="subBreedCollectionViewFlowLayout" destination="hmo-tx-uFR" id="MLW-qr-3rR"/>
+                <outlet property="subBreedHeightConstraint" destination="Vxf-N8-pPc" id="Zig-dy-W10"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="RzN-ho-uk4">
+                    <rect key="frame" x="8" y="28" width="359" height="623"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0E6-rM-b27">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </collectionView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xl3-Uo-b5G">
+                    <rect key="frame" x="0.0" y="659" width="375" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="Vxf-N8-pPc"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hmo-tx-uFR">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqz-Bz-PRI">
+                    <rect key="frame" x="16" y="603" width="343" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2ex-n7-v5z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xl3-Uo-b5G" firstAttribute="top" secondItem="RzN-ho-uk4" secondAttribute="bottom" constant="8" id="3XC-wv-bnG"/>
+                <constraint firstItem="RzN-ho-uk4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="AE5-XM-bhK"/>
+                <constraint firstItem="xl3-Uo-b5G" firstAttribute="top" secondItem="rqz-Bz-PRI" secondAttribute="bottom" constant="16" id="CAd-Ke-aZb"/>
+                <constraint firstItem="RzN-ho-uk4" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-8" id="DPB-ha-M8V"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rqz-Bz-PRI" secondAttribute="trailing" constant="16" id="K7g-TW-pYZ"/>
+                <constraint firstItem="xl3-Uo-b5G" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bXD-EO-Wok"/>
+                <constraint firstItem="xl3-Uo-b5G" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="jrD-XG-GvF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xl3-Uo-b5G" secondAttribute="bottom" constant="8" id="kBt-g3-plR"/>
+                <constraint firstItem="RzN-ho-uk4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="nn1-Fl-xhE"/>
+                <constraint firstItem="rqz-Bz-PRI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="o83-zn-lrb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="34.5" y="63.5"/>
+        </view>
+    </objects>
+</document>
